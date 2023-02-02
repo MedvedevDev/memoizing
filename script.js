@@ -1,4 +1,6 @@
- //Self-memoizing function
+'use strict'
+
+//Self-memoizing function
 function isPrime(number) {
   if (!isPrime.answers) {
     isPrime.answers = {}; //Create the 'cache' in which the function will save the answers to the computations it performs
@@ -26,6 +28,4 @@ isPrime(11);
 isPrime(2);
 
 console.log(isPrime.answers);
-
-
 
